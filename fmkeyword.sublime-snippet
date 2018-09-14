@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:search}->addInput('${3:fieldName}', 'keyword');
+\$${1:form}->${2:search}->input->${3:fieldName}->addSearchField('${4:title,description,keyword,tags,intro,content}', ${5:isFullText});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmkeyword</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:fieldName/NAMABEBAS}', 'multiselect');
+\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setTitle('${4:Reference Selection}');
+\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setReferenceTable('${5:bbc_content_cat_text}');
+\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setReferenceField('${6:title}','${7:cat_id}');
+#\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setReferenceCondition('lang_id='.lang_id());
+#\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setReferenceNested('par_id');
+#\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setRelationTable('bbc_content_category');
+#\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setRelationTableId('category_id');
+#\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setRelationField('content_id','cat_id');
+#\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setRelationCondition('pruned=0');
+#\$${1:form}->${2:edit}->input->${3:fieldName/NAMABEBAS}->setRelationCondition('active=1');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmmultiselect</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

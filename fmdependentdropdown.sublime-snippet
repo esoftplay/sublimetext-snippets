@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:NAMABEBAS}', 'dependentdropdown');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTitle('${4:Location}');
+
+// MEMBUAT SELECTION DENGAN NAMA FIELD fieldName1 YANG BUKAN TURUNAN DARI SELECTION LAIN
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput('${5:fieldName1}', '${7:bbc_country}', '');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTable('${5:fieldName1}', 'name', 'id');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addOption('${5:fieldName1}', '--Select Country--', '');
+
+// MEMBUAT SELECTION DENGAN NAMA FIELD fieldName2 TURUNAN DARI fieldName1
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput('${6:fieldName2}', '${8:bbc_country_state}', '${5:fieldName1}');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTable('${6:fieldName2}', 'name', 'id');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addOption('${6:fieldName2}', '--Select State--', '');
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmdependentdropdown</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

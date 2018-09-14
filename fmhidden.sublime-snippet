@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:add}->addInput('${3:fieldName}', 'hidden');
+\$${1:form}->${2:add}->input->${3:fieldName}->setDefaultValue(\$${4:the_value});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmhidden</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

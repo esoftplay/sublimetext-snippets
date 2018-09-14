@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:roll}->addInput('${3:fieldName}', 'checkbox');
+\$${1:form}->${2:roll}->input->${3:fieldName}->setTitle('${4:Judul Input}');
+\$${1:form}->${2:roll}->input->${3:fieldName}->setCaption('${5:Apakah anda ingin mencentang}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmcheckbox</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

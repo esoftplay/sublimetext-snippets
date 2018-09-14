@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:fieldName}', 'file');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setTitle('${4:Image}');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setFolder(\$Bbc->mod['dir']);
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setAllowedExtension(array('jpg', 'jpeg', 'gif', 'png', 'bmp'));
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setResize(1080);
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setThumbnail(120, \$prefix = 'thumb', \$is_dir = true);
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setWatermark(\$image_path, \$param_in_image_lib = array());
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setImageHover();
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setImageClick();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmfile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:NAMABEBAS}', 'tags');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTitle('${4:Content Tags}');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setLinks(\$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_${5:tag}&id=');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setAllowNew(true);
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setURL(\$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_${6:tagfetcher}');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setReferenceTable('${7:bbc_content_tag}');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setReferenceField('${8:title}', '${9:id}');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setReferenceCount(true||'total_fieldname');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setReferenceCondition('lang_id='.lang_id());
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setRelationTable('${10:bbc_content_tag_list}');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setRelationField('${11:content_id}', '${12:tag_id}');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setRelationTableId('list_id');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setDB('db1');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmtags</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

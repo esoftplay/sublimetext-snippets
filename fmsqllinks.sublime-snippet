@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:roll}->addInput('${3:fieldName}', 'sqllinks');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setTitle('${4:Judul Field}');
+\$${1:form}->${2:roll}->input->${3:fieldName}->setLinks(\$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_${5:edit}');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setGetName('id');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setFieldName('anyfield AS fieldName');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setModal();
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setUrlPop(\$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_${5:edit}');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setSizePop(640, 480);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmsqllinks</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

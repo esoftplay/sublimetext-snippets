@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:roll}->addInput('${3:fieldName}', 'editlinks');
+\$${1:form}->${2:roll}->input->${3:fieldName}->setTitle('${4:'Judul_Kolom'}');
+\$${1:form}->${2:roll}->input->${3:fieldName}->setCaption('${5:Label_Link}');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setModal();
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setGetName( 'id' );
+\$${1:form}->${2:roll}->input->${3:fieldName}->setFieldName( 'id AS ${3:fieldName}' );
+\$${1:form}->${2:roll}->input->${3:fieldName}->setLinks(\$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_link1', 'label1');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setLinks(\$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_link2', 'label2');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setLinks(array(
+#  \$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_link1' => 'label1',
+#  \$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_link2' => 'label2',
+#  \$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_link3' => 'label3'
+#  ));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmeditlinks</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

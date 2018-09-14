@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:fieldName}', 'header');
+\$${1:form}->${2:edit}->input->${3:fieldName}->setTitle('${4:text header dari form}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmheader</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:NAMABEBAS}', 'multiform');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTitle('${4:JUDUL INPUT}');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setReferenceTable('${5:table_reference}');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setReferenceField('${6:reference_id}', '${7:table_id}');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setReferenceCondition( 'active=1' );
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setToogle(false);
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput('${8:fieldName1}', '${9:text}', '${10:PLACEHOLDER_1}');
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput('fieldName2', 'INPUT_TYPE_2', 'PLACEHOLDER_2');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmmultiform</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

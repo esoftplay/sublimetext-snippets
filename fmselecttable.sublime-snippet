@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:film_id}', 'selecttable');
+\$${1:form}->${2:edit}->input->${3:film_id}->setTitle('${4:Film yang ditayangkan}');
+\$${1:form}->${2:edit}->input->${3:film_id}->setReferenceTable('${5:filmes ORDER BY title}');
+\$${1:form}->${2:edit}->input->${3:film_id}->setReferenceField( '${6:title}', '${7:id}' );
+#\$${1:form}->${2:edit}->input->${3:film_id}->setReferenceCondition( 'active=1' );
+#\$${1:form}->${2:edit}->input->${3:film_id}->setReferenceNested( 'par_id' );
+#\$${1:form}->${2:edit}->input->${3:film_id}->setAllowNew(\$bool_or_str, \$add_query = array());
+#\$${1:form}->${2:edit}->input->${3:film_id}->setLinks(\$Bbc->mod['circuit'].'.'.\$Bbc->mod['task'].'_detail');
+#\$${1:form}->${2:edit}->input->${3:film_id}->setDB('db1');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmselecttable</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

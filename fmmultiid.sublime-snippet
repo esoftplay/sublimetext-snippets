@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:related}', 'multiid');
+#\$${1:form}->${2:edit}->input->${3:related}->setTitle('${4:Related Content}');
+\$${1:form}->${2:edit}->input->${3:related}->setReferenceTable('${5:bbc_content_text}');
+\$${1:form}->${2:edit}->input->${3:related}->setReferenceField('${6:title}','${7:content_id}');
+#\$${1:form}->${2:edit}->input->${3:related}->setReferenceCondition('lang_id='.lang_id());
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmmultiid</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

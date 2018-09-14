@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:fieldname}', 'select');
+\$${1:form}->${2:edit}->input->${3:fieldname}->setTitle('${4:Judul Field}');
+\$${1:form}->${2:edit}->input->${3:fieldname}->addOption(${5:array('nol', 'satu', 'dua', 'tiga')});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmselect</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

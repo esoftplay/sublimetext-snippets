@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:roll}->addInput('${3:fieldName}', 'texttip');
+\$${1:form}->${2:roll}->input->${3:fieldName}->setTitle('${4:Judul Input}');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setCaption('Judul Tooltip {fieldName2}');
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setNumberFormat();
+#\$${1:form}->${2:roll}->input->${3:fieldName}->setTemplate('
+#<table>
+#  <tbody>
+#    <tr>
+#      <td>TEXT_BEBAS1</td>
+#      <td>: {fieldName3}</td>
+#    </tr>
+#    <tr>
+#      <td>TEXT_BEBAS2</td>
+#      <td>: {fieldName4}</td>
+#    </tr>
+#  </tbody>
+#</table>
+#');
+#\$${1:form}->${2:roll}->input->fieldName2->setNumberFormat();
+#\$${1:form}->${2:roll}->input->fieldName3->setNumberFormat();
+#\$${1:form}->${2:roll}->input->fieldName4->setNumberFormat();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmtexttip</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

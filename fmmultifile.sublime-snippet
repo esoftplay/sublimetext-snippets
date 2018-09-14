@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:images}', 'multifile');
+#\$${1:form}->${2:edit}->input->${3:images}->setTitle('${4:Judul Input}');
+\$${1:form}->${2:edit}->input->${3:images}->setFolder(\$Bbc->mod['dir'].\$${5:id}.'/');
+#\$${1:form}->${2:edit}->input->${3:images}->setResize(1920);
+#\$${1:form}->${2:edit}->input->${3:images}->setThumbnail(250, \$prefix = 'thumb');
+#\$${1:form}->${2:edit}->input->${3:images}->setWatermark(\$watermark_path, 'center');
+#\$${1:form}->${2:edit}->input->${3:images}->setFirstField('image');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmmultifile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

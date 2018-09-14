@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:roll}->addInput('${3:fieldName}', 'color');
+\$${1:form}->${2:roll}->input->${3:fieldName}->setTitle('${4:Judul Input}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmcolor</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

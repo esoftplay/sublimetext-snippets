@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:fieldName}', 'params');
+\$${1:form}->${2:edit}->input->${3:fieldName}->setTitle('${4:Judul Input}');
+\$${1:form}->${2:edit}->input->${3:fieldName}->setParams(\$${5:fields});
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setReferenceTable('bbc_user_field');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setReferenceCondition('group_id=0');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setReferenceCondition('active=1');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setEncode(true);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmparams</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

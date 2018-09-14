@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$${1:form}->${2:edit}->addInput('${3:fieldName}', 'dateinterval');
+\$${1:form}->${2:edit}->input->${3:fieldName}->setTitle('${5:Judul Input}');
+\$${1:form}->${2:edit}->input->${3:fieldName}->setEndDateField('${4:fieldName2}');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setPlaintext(true);
+\$${1:form}->${2:edit}->input->${3:fieldName}->setDefaultValue('now');
+\$${1:form}->${2:edit}->input->${3:fieldName}->setCaption('${6:Start Date}');
+\$${1:form}->${2:edit}->input->${4:fieldName2}->setTitle('${7:End Date}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fmdateinterval</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
