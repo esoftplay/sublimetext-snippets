@@ -12,7 +12,7 @@ or install manualy by cloning this project into your packages folder:
 * Linux: `~/.config/sublime-text-3/Packages`
 * Other: Go to menu `Preferences / Browse Packages`
 
-now you can clone this project in the folder above
+now you can clone this project inside the folder above
 
 ## Using the Esoftplay snippet
 
