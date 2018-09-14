@@ -4,11 +4,19 @@ Sublime snippets for [Esoftplay](http://dev.esoftplay.com) in your project flavo
 
 ## Installation
 
-Find it as [**Esoftplay Snippets**](https://packagecontrol.io/packages/Esoftplay%20Snippets) through [Package Control](https://packagecontrol.io/).
+Find it as [**esoftplay**](https://packagecontrol.io/packages/esoftplay) through [Package Control](https://packagecontrol.io/).
+
+or install manualy by cloning this project into your packages folder:
+
+* MacOS: `~/Library/Application Support/Sublime Text 3/Packages/`
+* Linux: `~/.config/sublime-text-3/Packages`
+* Other: Go to menu `Preferences / Browse Packages`
+
+now you can clone this project in the folder above
 
 ## Using the Esoftplay snippet
 
-try type 'fm' you will provided with a bunch of snippet to fasten you to finish your project
+try type `fm` you will provided with a bunch of snippets to fasten you to finish your project
 
 ## Available snippets
 
