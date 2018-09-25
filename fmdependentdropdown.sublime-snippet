@@ -10,7 +10,7 @@
 
 // MEMBUAT SELECTION DENGAN NAMA FIELD fieldName2 TURUNAN DARI fieldName1
 \$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput('${6:fieldName2}', '${8:bbc_country_state}', '${5:fieldName1}');
-\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTable('${6:fieldName2}', 'name', 'id');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTable('${6:fieldNjame2}', 'name', 'id');
 #\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addOption('${6:fieldName2}', '--Select State--', '');
 
 ]]></content>

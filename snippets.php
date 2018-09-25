@@ -1,3 +1,5 @@
+
+#!/usr/bin/env php
 <?php
 $snippets = array(
 	'_v'                    => '<?php  if (!defined(\'_VALID_BBC\')) exit(\'No direct script access allowed\');
@@ -44,7 +46,7 @@ $snippets = array(
 
 // MEMBUAT SELECTION DENGAN NAMA FIELD fieldName2 TURUNAN DARI fieldName1
 \$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput(\'${6:fieldName2}\', \'${8:bbc_country_state}\', \'${5:fieldName1}\');
-\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTable(\'${6:fieldName2}\', \'name\', \'id\');
+\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTable(\'${6:fieldNjame2}\', \'name\', \'id\');
 #\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addOption(\'${6:fieldName2}\', \'--Select State--\', \'\');
 ',
 
@@ -212,6 +214,7 @@ $snippets = array(
 
 	'FormTextarea'          => '\$${1:form}->${2:edit}->addInput(\'${3:description}\', \'textarea\');
 \$${1:form}->${2:edit}->input->${3:description}->setTitle(\'${4:Judul Input}\');
+#\$${1:form}->${2:edit}->input->${3:description}->setLanguage();
 #\$${1:form}->${2:edit}->input->${3:description}->setHtmlEditor();
 #\$${1:form}->${2:edit}->input->${3:description}->setToolbar(\'basic\');',
 
@@ -313,3 +316,6 @@ foreach ($snippets as $key => $snippet)
 	}
 	file_put_contents($filename, sprintf($code, $snippet, $trigger));
 }
+$file = __DIR__.'/PHP.sublime-completions';
+$url  = 'http://www.dev.esoftplay.com/tools/manual-snippets?file='.urlencode($file).'&is_ajax=1';
+echo file_get_contents($url);
