@@ -1,4 +1,4 @@
-# babel-sublime-snippets
+# esoftplay-sublime-snippets
 
 Sublime snippets for [Esoftplay](http://dev.esoftplay.com) in your project flavors.
 
@@ -6,17 +6,9 @@ Sublime snippets for [Esoftplay](http://dev.esoftplay.com) in your project flavo
 
 Find it as [**esoftplay**](https://packagecontrol.io/packages/esoftplay) through [Package Control](https://packagecontrol.io/).
 
-or install manualy by cloning this project into your packages folder:
-
-* MacOS: `~/Library/Application Support/Sublime Text 3/Packages/`
-* Linux: `~/.config/sublime-text-3/Packages`
-* Other: Go to menu `Preferences / Browse Packages`
-
-now you can clone this project inside the folder above and rename the result folder into esoftplay for easier to remember
-
 ## Using the Esoftplay snippet
 
-try type `fm` the package will provide a bunch of snippets to fasten you to finish your project
+try type `fm` the package will provide a bunch of snippets to fasten finishing your project
 
 ## Available snippets
 
@@ -60,4 +52,4 @@ try type `fm` the package will provide a bunch of snippets to fasten you to fini
 | `pear`                | [phpRollAdmin](http://dev.esoftplay.com/phpRollAdmin)                   |
 | `peas`                | [phpSearchAdmin](http://dev.esoftplay.com/phpSearchAdmin)               |
 
-and many other function snippets in esoftplay framework
+and many other function snippets in [esoftplay framework](https://github.com/esoftplay/master)
