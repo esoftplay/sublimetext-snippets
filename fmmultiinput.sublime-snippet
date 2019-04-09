@@ -2,7 +2,7 @@
 	<content><![CDATA[
 \$${1:form}->${2:edit}->addInput('${3:NAMABEBAS}', 'multiinput');
 \$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTitle('${4:JUDUL INPUT}');
-\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setToogle(false);
+#\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setToogle(false);
 \$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput('${5:fieldName1}', '${6:text}', '${7:PLACEHOLDER_1}');
 #\$${1:form}->${2:edit}->input->${3:NAMABEBAS}->addInput('fieldName2', 'INPUT_TYPE_2', 'PLACEHOLDER_2');
 ]]></content>
