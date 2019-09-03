@@ -4,6 +4,13 @@
 \$${1:form}->${2:edit}->input->${3:fieldName}->setTitle('${4:Judul Input}');
 \$${1:form}->${2:edit}->input->${3:fieldName}->setDateFormat('Y-m-d H:i:s');
 \$${1:form}->${2:edit}->input->${3:fieldName}->setDefaultValue('now');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setParam(array(
+#	'autoclose'       => true,
+#	'format'          => 'yyyy-mm-dd',
+#	'start-view'      => 0,
+#	'today-btn'       => true,
+#	'today-highlight' => true
+#	));
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>fmdatetime</tabTrigger>

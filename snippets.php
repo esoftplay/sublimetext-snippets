@@ -21,10 +21,23 @@ $snippets = array(
 
 	'FormDate'              => '\$${1:form}->${2:edit}->addInput(\'${3:fieldName}\', \'date\');
 \$${1:form}->${2:edit}->input->${3:fieldName}->setTitle(\'${4:Judul Input}\');
-#\$${1:form}->${2:edit}->input->${3:fieldName}->setDefaultValue(\'now\');',
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setDefaultValue(\'now\');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setParam(array(
+#	\'autoclose\'       => true,
+#	\'format\'          => \'yyyy-mm-dd\',
+#	\'start-view\'      => 0,
+#	\'today-btn\'       => true,
+#	\'today-highlight\' => true
+#	));',
 
 	'FormDateinterval'      => '\$${1:form}->${2:edit}->addInput(\'${3:fieldName}\', \'dateinterval\');
 \$${1:form}->${2:edit}->input->${3:fieldName}->setTitle(\'${5:Judul Input}\');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setParam(array(
+#	\'autoclose\'       => true,
+#	\'format\'          => \'yyyy-mm-dd\',
+#	\'today-btn\'       => true,
+#	\'today-highlight\' => true
+#	));
 \$${1:form}->${2:edit}->input->${3:fieldName}->setEndDateField(\'${4:fieldName2}\');
 #\$${1:form}->${2:edit}->input->${3:fieldName}->setPlaintext(true);
 \$${1:form}->${2:edit}->input->${3:fieldName}->setDefaultValue(\'now\');
@@ -34,7 +47,14 @@ $snippets = array(
 	'FormDatetime'          => '\$${1:form}->${2:edit}->addInput(\'${3:fieldName}\', \'datetime\');
 \$${1:form}->${2:edit}->input->${3:fieldName}->setTitle(\'${4:Judul Input}\');
 \$${1:form}->${2:edit}->input->${3:fieldName}->setDateFormat(\'Y-m-d H:i:s\');
-\$${1:form}->${2:edit}->input->${3:fieldName}->setDefaultValue(\'now\');',
+\$${1:form}->${2:edit}->input->${3:fieldName}->setDefaultValue(\'now\');
+#\$${1:form}->${2:edit}->input->${3:fieldName}->setParam(array(
+#	\'autoclose\'       => true,
+#	\'format\'          => \'yyyy-mm-dd\',
+#	\'start-view\'      => 0,
+#	\'today-btn\'       => true,
+#	\'today-highlight\' => true
+#	));',
 
 	'FormDependentdropdown' => '\$${1:form}->${2:edit}->addInput(\'${3:NAMABEBAS}\', \'dependentdropdown\');
 \$${1:form}->${2:edit}->input->${3:NAMABEBAS}->setTitle(\'${4:Location}\');

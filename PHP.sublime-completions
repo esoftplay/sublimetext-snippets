@@ -9,7 +9,7 @@
 		{ "trigger": "alert_add", "contents": "${1:_func('alert');}alert_add(${2:\\$title}, ${3:\\$description}, ${4:\\$params = array()}, ${5:\\$user_id='none'}, ${6:\\$group_id=0}, ${7:\\$module = ''});" },
 		{ "trigger": "alert_push", "contents": "${1:_func('alert');}alert_push(${2:\\$to}, ${3:\\$title}, ${4:\\$message}, ${5:\\$module = 'content'}, ${6:\\$arguments = array()}, ${7:\\$action = 'default'});" },
 		{ "trigger": "alert_push_send", "contents": "${1:_func('alert');}alert_push_send(${2:\\$id}, ${3:\\$last_id});" },
-		{ "trigger": "alert_push_signup", "contents": "${1:_func('alert');}alert_push_signup(${2:\\$token}, ${3:\\$user_id}, ${4:\\$username}, ${5:\\$device}, ${6:\\$push_id = 0});" },
+		{ "trigger": "alert_push_signup", "contents": "${1:_func('alert');}alert_push_signup(${2:\\$token}, ${3:\\$user_id}, ${4:\\$group_ids}, ${5:\\$username}, ${6:\\$device}, ${7:\\$push_id = 0});" },
 		{ "trigger": "alert_view", "contents": "${1:_func('alert');}alert_view(${2:\\$data});" },
 		{ "trigger": "array_option", "contents": "${1:_func('array');}array_option(${2:\\$data}, ${3:\\$par_id = 0}, ${4:\\$lastCatID = ''}, ${5:\\$delimeter = ' | '}, ${6:\\$prefix = ''});" },
 		{ "trigger": "array_path", "contents": "${1:_func('array');}array_path(${2:\\$data}, ${3:\\$par_id = 0}, ${4:\\$separate = ' / '}, ${5:\\$prefix = ''}, ${6:\\$load_parent = ''});" },
